@@ -13,5 +13,6 @@ func Init(e *gin.Engine) {
 	})
 	v1 := e.Group("/api/v1")
 	port := v1.Group("/port")
-	port.POST("/traffic", handles.GetPortTraffic)
+	port.POST("/traffic", handles.GetPortTrafficByMonth)
+	port.GET("/throughput", handles.GetPortThroughputByMonth)
 }

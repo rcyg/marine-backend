@@ -1,0 +1,92 @@
+[
+  {
+    "portName": "上海-宝山",
+    "portCode": "CNBAO",
+    "latitude": 31.4168,
+    "longitude": 121.482183
+  },
+  {
+    "portName": "上海-崇明",
+    "portCode": "CNCGM",
+    "latitude": 31.619333,
+    "longitude": 121.382233
+  },
+  {
+    "portName": "广州",
+    "portCode": "CNGUA",
+    "latitude": 22.844217,
+    "longitude": 113.569533
+  },
+  {
+    "portName": "青岛",
+    "portCode": "CNQIN",
+    "latitude": 36.0333,
+    "longitude": 120.2667
+  },
+  {
+    "portName": "日照",
+    "portCode": "CNRIZ",
+    "latitude": 35.35,
+    "longitude": 119.533333
+  },
+  {
+    "portName": "上海",
+    "portCode": "CNSHA",
+    "latitude": 31.130717,
+    "longitude": 121.46055
+  },
+  {
+    "portName": "上海-南港",
+    "portCode": "CNSHS",
+    "latitude": 30.844616,
+    "longitude": 121.846275
+  },
+  {
+    "portName": "深圳",
+    "portCode": "CNSHZ",
+    "latitude": 22.606933,
+    "longitude": 114.385383
+  },
+  {
+    "portName": "苏州",
+    "portCode": "CNSZH",
+    "latitude": 31.29185,
+    "longitude": 120.640417
+  },
+  {
+    "portName": "天津",
+    "portCode": "CNTJN",
+    "latitude": 38.97075,
+    "longitude": 117.8143
+  },
+  {
+    "portName": "上海-外高桥",
+    "portCode": "CNWGQ",
+    "latitude": 31.353633,
+    "longitude": 121.617967
+  },
+  {
+    "portName": "厦门",
+    "portCode": "CNXIA",
+    "latitude": 24.44535,
+    "longitude": 118.042517
+  },
+  {
+    "portName": "上海-洋山",
+    "portCode": "CNYSN",
+    "latitude": 30.633333,
+    "longitude": 122.066667
+  },
+  {
+    "portName": "宁波-舟山",
+    "portCode": "CNZOS",
+    "latitude": 30.006902,
+    "longitude": 122.099218
+  },
+  {
+    "portName": "中国香港",
+    "portCode": "HKHKG",
+    "latitude": 22.298785,
+    "longitude": 114.181938
+  }
+]

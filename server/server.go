@@ -23,6 +23,8 @@ func Init(e *gin.Engine) {
 	v1 := e.Group("/api/v1")
 
 	port := v1.Group("/port")
-	port.POST("/traffic", handles.GetPortTrafficByMonth)
-	port.GET("/throughput", handles.GetPortThroughputByMonth)
+	port.GET("", handles.GetPortByCode)                       // 获取单个Port
+	port.POST("", handles.GetPortsByCode)                     // 批量获取Ports
+	port.POST("/traffic", handles.GetPortTrafficByMonth)      // 获取逐月交通记录
+	port.GET("/throughput", handles.GetPortThroughputByMonth) // 获取逐月吞吐量
 }

@@ -8,6 +8,34 @@ import (
 	"github.com/sirupsen/logrus"
 )
 
+func GetPortByCode(code string) (*model.Port, error) {
+	var res *model.Port
+	err := db.Model(&model.Port{}).Where(model.Port{
+		PortCode: code,
+	}).Scan(&res).Error
+	if err != nil {
+		logrus.Errorf("failed to retrieve port for port: %s", code)
+		return res, err
+	}
+	return res, nil
+}
+
+func GetPortsByCode(codes []string) ([]*model.Port, error) {
+	var res []*model.Port
+	for _, c := range codes {
+		var port *model.Port
+		err := db.Model(&model.Port{}).Where(model.Port{
+			PortCode: c,
+		}).Scan(&port).Error
+		if err != nil {
+			logrus.Errorf("failed to retrieve port for port: %s", c)
+			continue
+		}
+		res = append(res, port)
+	}
+	return res, nil
+}
+
 func Get12MonthTrafficByPort(port string) ([]*model.PortTrafficMonthly, error) {
 	var in, out, res []*model.PortTrafficMonthly
 	// 入港
